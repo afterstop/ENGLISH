@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .afterstop{color: blue;}
+    </style>
+</head>
+<body>
+<h1 class="afterstop"></h1>
+<p></p>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>점심메뉴 추천</title>
+    <style>
+        .afterstop{color: rgb(120, 120, 217);}
+    </style>
+</head>
+<body>
+<h1 class="afterstop">점심메뉴 추천</h1>
+<p>안녕하세요! 오늘 점심 메뉴 추천을 받아보세요.</p>
+<button onclick="recommendMenu()">메뉴 추천 받기</button>
+<p id="menu"></p>
+
+<script>
+    // 메뉴 추천 함수
+    function recommendMenu() {
+        // 추천할 메뉴 리스트
+        var menuList = ["짜장면", "불고기", "피자", "샐러드", "우동", "김밥", "떡볶이", "짬뽕", "쌀국수", "햄버거"];
+
+        // 랜덤한 인덱스 선택
+        var randomIndex = Math.floor(Math.random() * menuList.length);
+
+        // 선택된 메뉴 표시
+        var menuElement = document.getElementById("menu");
+        menuElement.textContent = "추천 메뉴: " + menuList[randomIndex];
+    }
+</script>
+</body>
+</html>
+
+
+
+      
+
